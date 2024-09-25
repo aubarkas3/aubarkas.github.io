@@ -1,15 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Website</title>
+    <title>Shane Gillis Comedy Show Ticket Prices</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 40px;
+            color: #333;
+        }
+        h1 {
+            color: #556B2F;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, welcome to my MVP website!</h1>
-    <p>This is a simple static website hosted on GitHub Pages.</p>
-    <p>This is a simple static website hosted on GitHub Pages.</p>
-    <p>This is a simple static website hosted on GitHub Pages.</p>
+    <h1>Shane Gillis Comedy Show Ticket Prices</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Platform</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody id="priceTable">
+            <!-- Prices will be inserted here -->
+        </tbody>
+    </table>
+
+    <script>
+        function displayPrices() {
+            const prices = [
+                { platform: "Ticketmaster", price: "$50" },
+                { platform: "SeatGeek", price: "$45" },
+                { platform: "StubHub", price: "$55" },
+                { platform: "VividSeats", price: "$48" }
+            ];
+
+            const tableBody = document.getElementById('priceTable');
+            prices.forEach(ticket => {
+                const row = `<tr>
+                                <td>${ticket.platform}</td>
+                                <td>${ticket.price}</td>
+                             </tr>`;
+                tableBody.innerHTML += row;
+            });
+        }
+
+        // Call displayPrices when the page loads
+        window.onload = displayPrices;
+    </script>
 </body>
 </html>
