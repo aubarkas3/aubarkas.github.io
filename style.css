@@ -16,10 +16,9 @@ h1 {
     color: #28a745; /* Green color */
     text-align: left; /* Align text to the left */
     font-size: 28px;
-    padding: 20px;
-    margin-left: -20px; /* Adjust if necessary to align with the left edge */
-    margin-right: -20px; /* Stretch the header full width */
-    width: calc(100% + 40px); /* Correct width after adjusting margins */
+    padding: 10px 20px; /* Sufficient padding around the text */
+    display: inline-block; /* Makes the header only as wide as its content */
+    margin: 0; /* Removes any default margin */
 }
 
 /* Styling for tables */
@@ -79,8 +78,5 @@ button:hover {
 
     h1 {
         font-size: 24px;
-        margin-left: 0;
-        margin-right: 0;
-        width: auto;
     }
 }
