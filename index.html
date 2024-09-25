@@ -13,6 +13,7 @@
             <tr>
                 <th>Platform</th>
                 <th>Price</th>
+                <th>Buy</th> <!-- Added a column for buy buttons -->
             </tr>
         </thead>
         <tbody id="priceTable">
@@ -34,7 +35,8 @@
                 const row = `<tr>
                                 <td>${ticket.platform}</td>
                                 <td>${ticket.price}</td>
-                             </tr>`;
+                                <td><button onclick="alert('Redirecting to ${ticket.platform}...')">Buy Now</button></td>
+                             </tr>`; // Added a button to each row
                 tableBody.innerHTML += row;
             });
         }
