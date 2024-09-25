@@ -1,33 +1,79 @@
-/* General body styles */
+/* General body and page styles */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f2f5;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5; /* Light grey background */
     margin: 0;
     padding: 20px;
     color: #333;
+    background-image: url('background.jpg'); /* Background image for the entire page */
+    background-size: cover; /* Ensure the background covers the whole page */
+    background-position: center; /* Center the background image */
 }
 
 /* Header styling */
 h1 {
-    color: #2c3e50;
+    color: #e74c3c; /* Vivid red color */
     text-align: center;
-    font-size: 24px;
+    font-size: 28px;
+    padding: 20px;
 }
 
-/* Table styles */
+/* Styling for tables */
 table {
     width: 90%;
     max-width: 600px;
-    margin: 20px auto;
+    margin: 30px auto;
     border-collapse: collapse;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 /* Table header styles */
 th {
-    background-color: #2980b9;
+    background-color: #3498db; /* Bright blue */
     color: #ffffff;
     font-weight: normal;
+    padding: 12px 15px;
+}
+
+/* Table data styles */
+td {
     padding: 10px 15px;
-    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Button styling */
+button {
+    background-color: #e67e22; /* Vivid orange */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners for the button */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #d35400; /* Darker shade of orange */
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
 }
