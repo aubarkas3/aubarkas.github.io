@@ -1,12 +1,33 @@
+/* General body styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
     margin: 0;
-    background-color: #f4f4f4;
-    color: #b70909;
+    padding: 20px;
+    color: #333;
 }
 
+/* Header styling */
 h1 {
-    color: #556B2F;
+    color: #2c3e50;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Table styles */
+table {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* Table header styles */
+th {
+    background-color: #2980b9;
+    color: #ffffff;
+    font-weight: normal;
+    padding: 10px 15px;
+    text-align: left;
 }
