@@ -7,19 +7,21 @@
     <title>Shane Gillis Comedy Show</title>
 </head>
 <body>
-    <h1>Shane Gillis Comedy Show Ticket Prices</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Platform</th>
-                <th>Price</th>
-                <th>Buy</th> <!-- Added a column for buy buttons -->
-            </tr>
-        </thead>
-        <tbody id="priceTable">
-            <!-- Prices will be inserted here -->
-        </tbody>
-    </table>
+    <div class="content">
+        <h1>Shane Gillis Comedy Show Ticket Prices</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Platform</th>
+                    <th>Price</th>
+                    <th>Buy</th>
+                </tr>
+            </thead>
+            <tbody id="priceTable">
+                <!-- Prices will be inserted here -->
+            </tbody>
+        </table>
+    </div>
 
     <script>
         function displayPrices() {
@@ -36,13 +38,13 @@
                                 <td>${ticket.platform}</td>
                                 <td>${ticket.price}</td>
                                 <td><button onclick="alert('Redirecting to ${ticket.platform}...')">Buy Now</button></td>
-                             </tr>`; // Added a button to each row
+                             </tr>`;
                 tableBody.innerHTML += row;
             });
         }
 
-        // Call displayPrices when the page loads
         window.onload = displayPrices;
     </script>
 </body>
 </html>
+
