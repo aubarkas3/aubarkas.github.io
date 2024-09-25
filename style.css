@@ -12,17 +12,21 @@ body {
 
 /* Header styling */
 h1 {
-    color: #e74c3c; /* Vivid red color */
-    text-align: center;
+    background-color: #ffffff; /* White background */
+    color: #28a745; /* Green color */
+    text-align: left; /* Align text to the left */
     font-size: 28px;
     padding: 20px;
+    margin-left: -20px; /* Adjust if necessary to align with the left edge */
+    margin-right: -20px; /* Stretch the header full width */
+    width: calc(100% + 40px); /* Correct width after adjusting margins */
 }
 
 /* Styling for tables */
 table {
-    width: 90%;
+    width: 90%; /* Adjust width as needed */
     max-width: 600px;
-    margin: 30px auto;
+    margin: 20px 0; /* Align table to the left by reducing side margins */
     border-collapse: collapse;
     background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -75,5 +79,8 @@ button:hover {
 
     h1 {
         font-size: 24px;
+        margin-left: 0;
+        margin-right: 0;
+        width: auto;
     }
 }
