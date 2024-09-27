@@ -45,6 +45,13 @@ td {
     border-bottom: 1px solid #ddd;
 }
 
+/* Center align table data where buttons are placed */
+td button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 /* Button styling */
 button {
     background-color: #e67e22; /* Vivid orange */
@@ -78,5 +85,8 @@ button:hover {
 
     h1 {
         font-size: 24px;
+        margin: 0;
+        width: auto;
     }
 }
+
