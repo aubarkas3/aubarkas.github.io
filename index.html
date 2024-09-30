@@ -53,29 +53,11 @@
         </div>
     </section>
     <section class="event">
-        <h2>Bruins Game</h2>
-        <img src="bruins-game.jpg" alt="Bruins Game">
-        <table>
-            <tr>
-                <th>Platform</th>
-                <th>Price</th>
-                <th>Action</th>
-            </tr>
-            <tr>
-                <td>StubHub</td>
-                <td>$120</td>
-                <td><button>Buy Now</button></td>
-            </tr>
-            <tr>
-                <td>VividSeats</td>
-                <td>$115</td>
-                <td><button>Buy Now</button></td>
-            </tr>
-        </table>
-        </section>
-        <section class="event">
-            <h2>Patriots Game</h2>
-            <img src="patriots-game.jpg" alt="Patriots Game">
+        <div class="info">
+            <h2>Shane Gillis Comedy Show</h2>
+            <img src="shane-gillis.jpg" alt="Shane Gillis Comedy Show">
+        </div>
+        <div class="pricing">
             <table>
                 <tr>
                     <th>Platform</th>
@@ -84,16 +66,62 @@
                 </tr>
                 <tr>
                     <td>Ticketmaster</td>
-                    <td>$150</td>
-                    <td><button>Buy Now</button></td>
+                    <td>$50</td>
+                    <td><button onclick="buyTicket('Ticketmaster')">Buy Now</button></td>
                 </tr>
                 <tr>
                     <td>SeatGeek</td>
-                    <td>$145</td>
-                    <td><button>Buy Now</button></td>
+                    <td>$45</td>
+                    <td><button onclick="buyTicket('SeatGeek')">Buy Now</button></td>
+                </tr>
+                <tr>
+                    <td>StubHub</td>
+                    <td>$55</td>
+                    <td><button onclick="buyTicket('StubHub')">Buy Now</button></td>
+                </tr>
+                <tr>
+                    <td>VividSeats</td>
+                    <td>$48</td>
+                    <td><button onclick="buyTicket('VividSeats')">Buy Now</button></td>
                 </tr>
             </table>
-        </section>
+        </div>
+    </section>
+    <section class="event">
+        <div class="info">
+            <h2>Shane Gillis Comedy Show</h2>
+            <img src="shane-gillis.jpg" alt="Shane Gillis Comedy Show">
+        </div>
+        <div class="pricing">
+            <table>
+                <tr>
+                    <th>Platform</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>Ticketmaster</td>
+                    <td>$50</td>
+                    <td><button onclick="buyTicket('Ticketmaster')">Buy Now</button></td>
+                </tr>
+                <tr>
+                    <td>SeatGeek</td>
+                    <td>$45</td>
+                    <td><button onclick="buyTicket('SeatGeek')">Buy Now</button></td>
+                </tr>
+                <tr>
+                    <td>StubHub</td>
+                    <td>$55</td>
+                    <td><button onclick="buyTicket('StubHub')">Buy Now</button></td>
+                </tr>
+                <tr>
+                    <td>VividSeats</td>
+                    <td>$48</td>
+                    <td><button onclick="buyTicket('VividSeats')">Buy Now</button></td>
+                </tr>
+            </table>
+        </div>
+    </section>
         <script src="script.js"></script>
 </body>
 </html>
