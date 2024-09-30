@@ -1,0 +1,136 @@
+/* Base resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(120deg, #89f7fe, #66a6ff);
+    color: #333;
+    padding: 20px;
+    margin: 0;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2.5em;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.event {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.info {
+    flex: 1;
+    text-align: center;
+}
+
+.info h2 {
+    font-size: 1.8em;
+    color: #3498db;
+}
+
+.info p.location {
+    font-size: 0.9em;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.pricing {
+    flex: 1;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .event {
+        flex-direction: column;
+    }
+
+    .info, .pricing {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
