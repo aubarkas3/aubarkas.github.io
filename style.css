@@ -1,14 +1,14 @@
 /* General body and page styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f2f5; /* Light greyish background, adjust as needed */
+    background-color: #f0f2f5;
     color: #333;
     margin: 0;
     padding: 20px;
 }
 
 header {
-    background-color: #3498db; /* A nice shade of blue */
+    background-color: #3498db;
     color: white;
     padding: 10px 20px;
     text-align: center;
@@ -31,30 +31,30 @@ header nav ul li a {
 }
 
 h1 {
-    color: #2c3e50; /* Dark blue color */
+    color: #2c3e50;
     text-align: center;
 }
 
 .event {
-    background-color: white;
+    display: flex;
+    justify-content: space-between;
     margin: 20px 0;
+    background-color: white;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.event h2 {
-    color: #3498db; /* Matching the header */
+.info {
+    flex: 1;
+    margin-right: 20px; /* Space between image block and table */
 }
 
-.event img {
-    width: 100%; /* Adjust as needed */
-    height: auto;
-    margin-top: 10px;
+.pricing {
+    flex: 1;
 }
 
 table {
     width: 100%;
-    margin-top: 10px;
     border-collapse: collapse;
 }
 
@@ -65,18 +65,18 @@ th, td {
 }
 
 button {
-    background-color: #3498db; /* Blue button */
+    background-color: #3498db;
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
-    display: block; /* Makes the button a block element */
-    width: 100%; /* Full-width button */
+    width: 100%;
 }
 
 button:hover {
-    background-color: #2874a6; /* Darker blue */
+    background-color: #2874a6;
 }
+
 
 
