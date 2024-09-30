@@ -8,15 +8,16 @@ body {
 }
 
 header {
-    background-color: #3498db;
+    background-color: #3498db; /* Blue header background */
     color: white;
-    padding: 10px 20px;
+    padding: 10px 0;
     text-align: center;
 }
 
 header nav ul {
     list-style: none;
     padding: 0;
+    margin: 0; /* Removes default margin */
 }
 
 header nav ul li {
@@ -31,26 +32,26 @@ header nav ul li a {
 }
 
 h1 {
-    color: #2c3e50;
+    color: #2c3e50; /* Dark blue for the title */
     text-align: center;
 }
 
 .event {
     display: flex;
     justify-content: space-between;
-    margin: 20px 0;
     background-color: white;
     padding: 20px;
+    margin-top: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .info {
     flex: 1;
-    margin-right: 20px; /* Space between image block and table */
+    margin-right: 20px;
 }
 
 .pricing {
-    flex: 1;
+    flex: 2;
 }
 
 table {
@@ -75,7 +76,8 @@ button {
 }
 
 button:hover {
-    background-color: #2874a6;
+    background-color: #2874a6; /* Darker blue on hover */
 }
+
 
 
