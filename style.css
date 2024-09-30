@@ -36,9 +36,10 @@ nav ul li a {
 }
 
 h1 {
-    text-align: center;
+    text-align: left; /* Align text to the left */
+    color: #2c3e50; /* Dark blue for the title */
     margin-top: 20px;
-    color: #2c3e50;
+    padding-left: 20px; /* Add padding for visual space */
 }
 
 .event {
