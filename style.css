@@ -14,6 +14,43 @@ body {
     max-width: 1200px;
 }
 
+.search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-container form {
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+    background-color: #f0f2f5;
+    border: 2px solid #3498db; /* Blue border to match the header */
+    border-radius: 5px;
+}
+
+.search-container input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #333;
+    width: 240px; /* You can adjust the width as needed */
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.search-container button:hover {
+    background-color: #2874a6; /* Darker shade of blue on hover */
+}
+
 header {
     background-color: #3498db;
     color: white;
