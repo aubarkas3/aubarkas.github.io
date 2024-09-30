@@ -4,47 +4,82 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shane Gillis Comedy Show</title>
+    <title>Event Tickets</title>
 </head>
 <body>
-    <div class="content">
-        <h1>Shane Gillis Comedy Show Ticket Prices</h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#find-events">Find events near you</a></li>
+                <li><a href="#profile">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Featured Events</h1>
+    <section class="event">
+        <h2>Shane Gillis Comedy Show</h2>
+        <img src="shane-gillis.jpg" alt="Shane Gillis Comedy Show">
         <table>
-            <thead>
-                <tr>
-                    <th>Platform</th>
-                    <th>Price</th>
-                    <th>Buy</th>
-                </tr>
-            </thead>
-            <tbody id="priceTable">
-                <!-- Prices will be inserted here -->
-            </tbody>
+            <tr>
+                <th>Platform</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>Ticketmaster</td>
+                <td>$50</td>
+                <td><button>Buy Now</button></td>
+            </tr>
+            <tr>
+                <td>SeatGeek</td>
+                <td>$45</td>
+                <td><button>Buy Now</button></td>
+            </tr>
         </table>
-    </div>
-
-    <script>
-        function displayPrices() {
-            const prices = [
-                { platform: "Ticketmaster", price: "$50" },
-                { platform: "SeatGeek", price: "$45" },
-                { platform: "StubHub", price: "$55" },
-                { platform: "VividSeats", price: "$48" }
-            ];
-
-            const tableBody = document.getElementById('priceTable');
-            prices.forEach(ticket => {
-                const row = `<tr>
-                                <td>${ticket.platform}</td>
-                                <td>${ticket.price}</td>
-                                <td><button onclick="alert('Redirecting to ${ticket.platform}...')">Buy Now</button></td>
-                             </tr>`;
-                tableBody.innerHTML += row;
-            });
-        }
-
-        window.onload = displayPrices;
-    </script>
+    </section>
+    <section class="event">
+        <h2>Bruins Game</h2>
+        <img src="bruins-game.jpg" alt="Bruins Game">
+        <table>
+            <tr>
+                <th>Platform</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>StubHub</td>
+                <td>$120</td>
+                <td><button>Buy Now</button></td>
+            </tr>
+            <tr>
+                <td>VividSeats</td>
+                <td>$115</td>
+                <td><button>Buy Now</button></td>
+            </tr>
+        </table>
+    </section>
+    <section class="event">
+        <h2>Patriots Game</h2>
+        <img src="patriots-game.jpg" alt="Patriots Game">
+        <table>
+            <tr>
+                <th>Platform</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>Ticketmaster</td>
+                <td>$150</td>
+                <td><button>Buy Now</button></td>
+            </tr>
+            <tr>
+                <td>SeatGeek</td>
+                <td>$145</td>
+                <td><button>Buy Now</button></td>
+            </tr>
+        </table>
+    </section>
 </body>
 </html>
 
