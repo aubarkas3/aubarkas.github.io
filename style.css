@@ -40,7 +40,7 @@ nav ul li a {
 }
 
 h1 {
-    text-align: Left;
+    text-align: center;
     color: #2c3e50;
     margin: 20px 0;
 }
@@ -64,11 +64,17 @@ h1 {
     flex: 1; /* Takes the remaining half of the space */
 }
 
+.info h2 {
+    text-align: center; /* Centers the title above the image */
+}
+
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 10px;
+    display: block; /* Removes inline characteristics */
+    margin: 0 auto; /* Centers the image */
+    width: 80%; /* Fixed width */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Adjusts the fit of the image without distortion */
+    border-radius: 10px; /* Optional: adds rounded corners to images */
 }
 
 table {
@@ -104,5 +110,9 @@ button:hover {
 
     .info, .pricing {
         width: 100%; /* Ensures full width on small screens */
+    }
+
+    img {
+        width: 100%; /* Full width on smaller screens */
     }
 }
