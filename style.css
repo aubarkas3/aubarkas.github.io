@@ -1,39 +1,44 @@
-/* General body and page styles */
+/* Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f2f5;
     color: #333;
-    margin: 0;
     padding: 20px;
 }
 
 header {
-    background-color: #3498db; /* Blue header background */
-    color: white;
+    background-color: #3498db;
     padding: 10px 0;
+    color: white;
     text-align: center;
 }
 
-header nav ul {
+nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0; /* Removes default margin */
 }
 
-header nav ul li {
+nav ul li {
     display: inline;
     margin-right: 20px;
 }
 
-header nav ul li a {
+nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
     font-size: 16px;
 }
 
 h1 {
-    color: #2c3e50; /* Dark blue for the title */
     text-align: center;
+    margin-top: 20px;
+    color: #2c3e50;
 }
 
 .event {
@@ -46,12 +51,18 @@ h1 {
 }
 
 .info {
-    flex: 1;
-    margin-right: 20px;
+    flex-basis: 50%;
 }
 
 .pricing {
-    flex: 2;
+    flex-basis: 50%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
 }
 
 table {
@@ -76,8 +87,5 @@ button {
 }
 
 button:hover {
-    background-color: #2874a6; /* Darker blue on hover */
+    background-color: #2874a6;
 }
-
-
-
