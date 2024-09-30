@@ -1,15 +1,11 @@
-/* Resets */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General body and page styles */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f2f5;
     color: #333;
     padding: 20px;
+    margin: 0 auto; /* Center the content */
+    max-width: 1200px; /* Optional: max-width for large screens */
 }
 
 header {
@@ -21,11 +17,13 @@ header {
 
 nav ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    display: inline-block; /* Adjust display for smaller screens */
+    margin-right: 10px;
 }
 
 nav ul li a {
@@ -36,34 +34,28 @@ nav ul li a {
 }
 
 h1 {
-    text-align: left; /* Align text to the left */
-    color: #2c3e50; /* Dark blue for the title */
-    margin-top: 20px;
-    padding-left: 20px; /* Add padding for visual space */
+    text-align: center; /* Center on small screens */
+    color: #2c3e50;
+    margin: 20px 0;
+    padding: 0 10px;
 }
 
 .event {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Stack on small screens */
     background-color: white;
     padding: 20px;
-    margin-top: 20px;
+    margin: 20px 0;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.info {
-    flex-basis: 50%;
-}
-
-.pricing {
-    flex-basis: 50%;
+.info, .pricing {
+    width: 100%; /* Full width on small screens */
 }
 
 img {
     max-width: 100%;
     height: auto;
-    display: block;
-    margin-bottom: 10px;
 }
 
 table {
@@ -74,7 +66,6 @@ table {
 th, td {
     text-align: left;
     padding: 8px;
-    border-bottom: 1px solid #ddd;
 }
 
 button {
@@ -89,4 +80,27 @@ button {
 
 button:hover {
     background-color: #2874a6;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block; /* Each link on a new line */
+    }
+
+    h1, .event {
+        padding: 10px;
+    }
+
+    .event {
+        flex-direction: column;
+    }
+
+    .info, .pricing {
+        width: 100%;
+    }
 }
