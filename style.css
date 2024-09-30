@@ -1,92 +1,82 @@
 /* General body and page styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f2f5; /* Light grey background */
+    background-color: #f0f2f5; /* Light greyish background, adjust as needed */
+    color: #333;
     margin: 0;
     padding: 20px;
-    color: #333;
-    background-image: url('background.jpeg'); /* Background image for the entire page */
-    background-size: cover; /* Ensure the background covers the whole page */
-    background-position: center; /* Center the background image */
 }
 
-/* Header styling */
+header {
+    background-color: #3498db; /* A nice shade of blue */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
 h1 {
-    background-color: #ffffff; /* White background */
-    color: #28a745; /* Green color */
-    text-align: left; /* Align text to the left */
-    font-size: 28px;
-    padding: 10px 20px; /* Sufficient padding around the text */
-    display: inline-block; /* Makes the header only as wide as its content */
-    margin: 0; /* Removes any default margin */
+    color: #2c3e50; /* Dark blue color */
+    text-align: center;
 }
 
-/* Styling for tables */
-table {
-    width: 90%; /* Adjust width as needed */
-    max-width: 600px;
-    margin: 20px 0; /* Align table to the left by reducing side margins */
-    border-collapse: collapse;
-    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+.event {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Table header styles */
-th {
-    background-color: #3498db; /* Bright blue */
-    color: #ffffff;
-    font-weight: normal;
-    padding: 12px 15px;
+.event h2 {
+    color: #3498db; /* Matching the header */
 }
 
-/* Table data styles */
-td {
-    padding: 10px 15px;
+.event img {
+    width: 100%; /* Adjust as needed */
+    height: auto;
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
     border-bottom: 1px solid #ddd;
 }
 
-/* Center align table data where buttons are placed */
-td button {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
-/* Button styling */
 button {
-    background-color: #e67e22; /* Vivid orange */
+    background-color: #3498db; /* Blue button */
     color: white;
     border: none;
     padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
-    border-radius: 5px; /* Rounded corners for the button */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    display: block; /* Makes the button a block element */
+    width: 100%; /* Full-width button */
 }
 
-/* Hover effect for buttons */
 button:hover {
-    background-color: #d35400; /* Darker shade of orange */
+    background-color: #2874a6; /* Darker blue */
 }
 
-/* Responsive design for mobile devices */
-@media (max-width: 600px) {
-    body {
-        padding: 10px;
-    }
-
-    table {
-        width: 100%;
-    }
-
-    h1 {
-        font-size: 24px;
-        margin: 0;
-        width: auto;
-    }
-}
 
