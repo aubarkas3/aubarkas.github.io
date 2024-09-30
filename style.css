@@ -16,39 +16,41 @@ body {
 
 .search-container {
     text-align: center;
-    margin: 20px 0;
+    margin: 30px auto;
+    padding: 10px;
+    width: 80%; /* Adjust based on preference */
+    max-width: 600px; /* Keeps the search bar from becoming too wide on larger screens */
 }
 
 .search-container form {
     display: inline-block;
-    margin: 10px;
-    padding: 5px;
-    background-color: #f0f2f5;
-    border: 2px solid #3498db; /* Blue border to match the header */
-    border-radius: 5px;
+    width: 100%;
 }
 
 .search-container input[type="text"] {
-    padding: 8px;
-    font-size: 16px;
-    border: none;
+    width: 75%; /* Adjust the width ratio between the input and the button */
+    padding: 10px;
+    border-radius: 25px 0 0 25px; /* Smooth rounded left edges */
+    border: 2px solid #3498db;
     outline: none;
     color: #333;
-    width: 240px; /* You can adjust the width as needed */
+    font-size: 16px;
 }
 
 .search-container button {
-    padding: 10px 20px;
+    width: 25%;
+    padding: 12px;
+    border: 2px solid #3498db;
+    border-left: none; /* Creates a seamless connection with the input field */
+    border-radius: 0 25px 25px 0; /* Smooth rounded right edges */
     background-color: #3498db;
     color: white;
-    border: none;
     cursor: pointer;
     font-size: 16px;
-    border-radius: 5px;
 }
 
-.search-container button:hover {
-    background-color: #2874a6; /* Darker shade of blue on hover */
+button:hover {
+    background-color: #2874a6; /* Darker blue for interaction feedback */
 }
 
 header {
