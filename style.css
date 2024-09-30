@@ -66,7 +66,16 @@ h1 {
 
 .info h2 {
     text-align: center; /* Centers the title above the image */
+    margin-bottom: 5px; /* Adds a little space between the title and location */
 }
+
+.location {
+    font-size: 0.9em; /* Slightly smaller than the title */
+    text-align: center; /* Center the location text under the title */
+    color: #555; /* Slightly lighter color than the title */
+    margin-bottom: 10px; /* Space before the image */
+}
+
 
 img {
     display: block; /* Removes inline characteristics */
