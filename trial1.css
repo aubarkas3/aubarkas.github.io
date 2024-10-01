@@ -169,3 +169,12 @@ button:hover {
         margin-top: 10px;
     }
 }
+
+.tooltip {
+    display: none;
+    position: absolute;
+    padding: 5px 10px;
+    background: white;
+    border: 1px solid #ccc;
+    z-index: 1000;
+}
