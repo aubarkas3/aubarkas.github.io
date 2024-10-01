@@ -6,24 +6,25 @@ function handleSearch(event) {
     alert('Looking for your event'); // Displays the alert message
 }
 document.addEventListener('DOMContentLoaded', function() {
-    const areas = document.querySelectorAll('area');
-    const tooltip = document.createElement('div');
-    tooltip.className = 'tooltip';
-    document.body.appendChild(tooltip);
+    const image = document.getElementById('seatingChart');
+    const mapAreas = document.querySelectorAll('area');
+    const overlay = document.createElement('div');
+    overlay.className = 'overlay';
+    document.body.appendChild(overlay);
 
-    areas.forEach(area => {
-        area.addEventListener('mouseenter', function(e) {
-            tooltip.textContent = this.getAttribute('data-section');
-            tooltip.style.display = 'block';
-            tooltip.style.left = e.pageX + 'px';
-            tooltip.style.top = e.pageY + 'px';
+    mapAreas.forEach(area => {
+        area.addEventListener('mouseenter', function() {
+            const coords = this.getAttribute('coords').split(',').map(Number);
+            const rect = image.getBoundingClientRect();
+            overlay.style.width = `${coords[2] - coords[0]}px`;
+            overlay.style.height = `${coords[3] - coords[1]}px`;
+            overlay.style.left = `${rect.left + window.scrollX + coords[0]}px`;
+            overlay.style.top = `${rect.top + window.scrollY + coords[1]}px`;
+            overlay.style.display = 'block';
         });
-        area.addEventListener('mousemove', function(e) {
-            tooltip.style.left = e.pageX + 'px';
-            tooltip.style.top = e.pageY + 'px';
-        });
+
         area.addEventListener('mouseleave', function() {
-            tooltip.style.display = 'none';
+            overlay.style.display = 'none';
         });
     });
 });
