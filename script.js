@@ -6,15 +6,19 @@ function handleSearch(event) {
     alert('Looking for your event'); // Displays the alert message
 }
 document.addEventListener('DOMContentLoaded', function() {
-    const areas = document.querySelectorAll('.seating-chart area');
+    const areas = document.querySelectorAll('area');
     const tooltip = document.createElement('div');
     tooltip.className = 'tooltip';
     document.body.appendChild(tooltip);
 
     areas.forEach(area => {
         area.addEventListener('mouseenter', function(e) {
-            tooltip.textContent = area.dataset.section;
+            tooltip.textContent = this.getAttribute('data-section');
             tooltip.style.display = 'block';
+            tooltip.style.left = e.pageX + 'px';
+            tooltip.style.top = e.pageY + 'px';
+        });
+        area.addEventListener('mousemove', function(e) {
             tooltip.style.left = e.pageX + 'px';
             tooltip.style.top = e.pageY + 'px';
         });
