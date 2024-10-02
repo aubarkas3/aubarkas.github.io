@@ -179,7 +179,25 @@ th, td {
     color: #1701aa;
     font-size: 2.0em;
     margin: 20px 0;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.feedback-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f7fafa;
+    color: #1701aa;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.feedback-button:hover {
+    background-color: #3c2bc0;
 }
 
 
