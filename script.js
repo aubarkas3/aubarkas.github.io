@@ -8,7 +8,6 @@ function handleSearch(event) {
 document.querySelectorAll('.button').forEach(button => {
     button.addEventListener('click', function(event) {
         event.preventDefault();
-        alert('Redirecting to ' + this.href);
         window.location.href = this.href; // or other tracking functionality
     });
 });
