@@ -184,7 +184,7 @@ th, td {
 
 .feedback-button {
     display: inline-block;
-    align-self: center;
+    align-items: center;
     padding: 10px 20px;
     background-color: #f7fafa;
     color: #1701aa;
