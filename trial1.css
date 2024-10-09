@@ -160,8 +160,11 @@ th, td {
     display: none; /* Initially hide all rows */
 }
 
-#myTable tbody tr:nth-child(-n+4) {
-    display: table-row; /* Only display the first four rows */
+#myTable tbody tr:nth-child(n+5) {
+    display: none; /* Hide all rows starting from the fifth row */
+}
+.event-table tbody tr:nth-child(n+5) {
+    display: none;
 }
 
 #viewMore {
