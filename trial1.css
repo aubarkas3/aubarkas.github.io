@@ -5,7 +5,6 @@
     box-sizing: border-box;
     transition: all 0.3s ease;
 }
-
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     background: linear-gradient(120deg, #89f7fe, #66a6ff);
@@ -13,7 +12,6 @@ body {
     padding: 20px;
     margin: 0;
 }
-
 header {
     background: rgba(255, 255, 255, 0.8);
     color: #333;
@@ -23,24 +21,20 @@ header {
     top: 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
-
 nav ul {
     list-style: none;
     padding: 0;
 }
-
 nav ul li {
     display: inline-block;
     margin-right: 20px;
 }
-
 nav ul li a {
     color: #333;
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
 }
-
 h1 {
     text-align: center;
     color: #ffffff;
@@ -48,7 +42,6 @@ h1 {
     margin: 20px 0;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
-
 .event {
     background-color: white;
     padding: 20px;
@@ -60,24 +53,20 @@ h1 {
     align-items: center;
     flex-wrap: wrap;
 }
-
 .info {
     flex: 1;
     text-align: center;
 }
-
 .info h2 {
     font-size: 2.2em;
     color: #3498db;
 }
-
 .info p.location {
     font-size: 1.1em;
     color: #555;
     font-style: italic;
     margin-bottom: 5px;
 }
-
 img {
     width: 300px; /* Fixed width */
     height: 200px; /* Fixed height */
@@ -87,23 +76,19 @@ img {
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
-
 .pricing {
     flex: 1;
     margin-top: 20px;
 }
-
 table {
     width: 100%;
     border-collapse: collapse;
 }
-
 th, td {
     text-align: center;
     padding: 10px;
     border-bottom: 1px solid #ddd;
 }
-
 .button {
     display: inline-block;
     padding: 10px 20px;
@@ -117,57 +102,10 @@ th, td {
     border: none;
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
-
 .button:hover {
     background-color: #c0392b;
 }
-
-.search-container {
-    text-align: center;
-    margin: 40px auto;
-    padding: 15px;
-    width: 90%; /* Manage width to ensure fit */
-    max-width: 800px; /* Maximum width for large screens */
-}
-
-.search-container form {
-    display: flex; /* This will line up the elements horizontally */
-    justify-content: center; /* Center the form contents */
-    align-items: center; /* Align items for visual consistency */
-}
-
-.search-container input[type="text"] {
-    flex-grow: 1; /* Allow the input to take up as much space as possible */
-    padding: 10px;
-    margin-right: 8px; /* Space between input and button */
-    border-radius: 5px 0 0 5px; /* Rounded corners on the left side */
-    border: 2px solid #3498db; /* Blue border to match button */
-    outline: none;
-}
-
-.search-container button {
-    padding: 10px 20px;
-    border-radius: 0 5px 5px 0; /* Rounded corners on the right side */
-    background-color: #3498db;
-    color: white;
-    border: 2px solid #3498db;
-    border-left: none; /* Remove border between button and input */
-    cursor: pointer;
-    font-size: 16px;
-}
-
-#myTable tbody tr {
-    display: none; /* Initially hide all rows */
-}
-
-#myTable tbody tr:nth-child(n+5) {
-    display: none; /* Hide all rows starting from the fifth row */
-}
-.event-table tbody tr:nth-child(n+5) {
-    display: none;
-}
-
-#viewMore {
+.viewMore {
     display: block; /* Makes it a block-level element, which can be easily centered */
     text-align: center; /* Centers the text inside the element */
     color: #007bff; /* Gives it a hyperlink-like color */
@@ -176,50 +114,17 @@ th, td {
     text-decoration: underline; /* Makes it look more like a link */
     margin: auto; /* Centers the span in the middle of the page horizontally */
 }
-
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .event {
         flex-direction: column;
     }
-
     .info, .pricing {
         width: 100%;
         text-align: center;
     }
-
     nav ul li {
         display: block;
         text-align: center;
         margin-top: 10px;
     }
 }
-
-.feedback{
-    text-align: center;
-    color: #1701aa;
-    font-size: 1.3em;
-    margin: 20px 0;
-}
-
-.feedback-button {
-    display: inline-block;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #f7fafa;
-    color: #1701aa;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-}
-
-.feedback-button:hover {
-    background-color: #3c2bc0;
-}
-
-
-
