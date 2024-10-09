@@ -4,8 +4,11 @@ function handleSearch(event) {
 }
 document.querySelectorAll('.button').forEach(button => {
     button.addEventListener('click', function(event) {
-        event.preventDefault();
-        window.location.href = this.href; // or other tracking functionality
+        // Log the click or perform other actions here
+        console.log('Navigating to: ' + this.href);
+        
+        // No need to prevent default or manually set window.location.href
+        // The browser will handle `target="_blank"` as per the link's attribute
     });
 });
 
