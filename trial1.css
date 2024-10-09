@@ -164,6 +164,16 @@ th, td {
     display: table-row; /* Only display the first four rows */
 }
 
+#viewMore {
+    display: block; /* Makes it a block-level element, which can be easily centered */
+    text-align: center; /* Centers the text inside the element */
+    color: #007bff; /* Gives it a hyperlink-like color */
+    padding: 10px 0; /* Adds some spacing around the text */
+    cursor: pointer; /* Makes it clear the text is clickable */
+    text-decoration: underline; /* Makes it look more like a link */
+    margin: auto; /* Centers the span in the middle of the page horizontally */
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .event {
