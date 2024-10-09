@@ -10,18 +10,22 @@ document.querySelectorAll('.button').forEach(button => {
     });
 });
 
-function toggleRows() {
-    const rows = document.querySelectorAll('#myTable tbody tr');
-    const viewMore = document.getElementById('viewMore');
-    if (rows[4].style.display === 'none' || rows[4].style.display === '') {
-        for (let i = 4; i < rows.length; i++) {
+function toggleRows(tableId) {
+    const table = document.getElementById(tableId);
+    const rows = table.querySelectorAll('tbody tr');
+    const viewMore = document.getElementById('viewMore' + tableId.slice(-1)); // Assumes IDs like 'myTable1', 'viewMore1'
+
+    // Toggle the display of rows beyond the first four
+    let showingMore = false;
+    for (let i = 4; i < rows.length; i++) {
+        if (rows[i].style.display === 'none' || rows[i].style.display === '') {
             rows[i].style.display = 'table-row';
-        }
-        viewMore.textContent = 'View Less..';
-    } else {
-        for (let i = 4; i < rows.length; i++) {
+            showingMore = true;
+        } else {
             rows[i].style.display = 'none';
         }
-        viewMore.textContent = 'View More..';
     }
+
+    // Update the text of the View More link
+    viewMore.textContent = showingMore ? 'View Less..' : 'View More..';
 }
