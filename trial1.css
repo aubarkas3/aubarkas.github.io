@@ -42,11 +42,12 @@ h1 {
     margin: 20px 0;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
-.feedback p {
+.feedback {
     font-size: 1.2em; /* Slightly larger than the default */
     font-weight: bold; /* Make text bold */
     color: #00008B; /* Dark blue color */
     margin-bottom: 10px; /* Space before the button */
+    text-align: center;
 }
 
 /* Styles for the 'Give Feedback' button */
