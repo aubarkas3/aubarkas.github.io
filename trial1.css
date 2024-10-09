@@ -156,6 +156,14 @@ th, td {
     font-size: 16px;
 }
 
+#myTable tbody tr {
+    display: none; /* Initially hide all rows */
+}
+
+#myTable tbody tr:nth-child(-n+4) {
+    display: table-row; /* Only display the first four rows */
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .event {
