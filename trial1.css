@@ -22,7 +22,7 @@ header {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 #logo-image {
-    width: 2000px;  /* Set a fixed width, adjust as needed */
+    width: 200px;  /* Set a fixed width, adjust as needed */
     height: auto;  /* Maintain aspect ratio */
     display: block;  /* Ensure it behaves as a block-level element */
     margin: 0 auto;  /* Center align if needed, or adjust margin as per layout needs */
