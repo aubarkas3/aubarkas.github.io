@@ -21,10 +21,17 @@ header {
     top: 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
+#logo-image {
+    width: 150px;  /* Set a fixed width, adjust as needed */
+    height: auto;  /* Maintain aspect ratio */
+    display: block;  /* Ensure it behaves as a block-level element */
+    margin: 0 auto;  /* Center align if needed, or adjust margin as per layout needs */
+}
+
 .logo-container {
-    text-align: left; /* Aligns the logo to the left */
-    margin-top: 20px; /* Provides some space between the header and the logo */
-    padding-left: 20px; /* Adds padding on the left for some breathing room */
+    text-align: left;  /* Aligns the logo to the left */
+    margin-top: 20px;  /* Provides some space between the header and the logo */
+    padding-left: 20px;  /* Adds padding on the left for some breathing room */
 }
 nav ul {
     list-style: none;
@@ -98,7 +105,7 @@ h1 {
     font-style: italic;
     margin-bottom: 5px;
 }
-img {
+.bodyimg {
     width: 300px; /* Fixed width */
     height: 200px; /* Fixed height */
     object-fit: cover; /* Ensures the image covers the area without distorting */
