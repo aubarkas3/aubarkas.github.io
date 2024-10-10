@@ -7,7 +7,7 @@
 }
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background: linear-gradient(120deg, #89f7fe, #66a6ff);
+    background: linear-gradient(120deg, #f52c2c, #66a6ff);
     color: #333;
     padding: 20px;
     margin: 0;
@@ -130,7 +130,7 @@ th, td {
 .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #e74c3c;
+    background-color: #a71100;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -141,7 +141,7 @@ th, td {
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 .button:hover {
-    background-color: #c0392b;
+    background-color: #a41100;
 }
 .viewMore {
     display: block; /* Makes it a block-level element, which can be easily centered */
