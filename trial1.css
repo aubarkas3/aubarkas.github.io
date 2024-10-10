@@ -21,6 +21,11 @@ header {
     top: 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
+.logo-container {
+    text-align: left; /* Aligns the logo to the left */
+    margin-top: 20px; /* Provides some space between the header and the logo */
+    padding-left: 20px; /* Adds padding on the left for some breathing room */
+}
 nav ul {
     list-style: none;
     padding: 0;
