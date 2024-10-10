@@ -81,7 +81,7 @@ h1 {
     background-color: #0056b3; /* Darker blue on hover for interaction feedback */
 }
 .event {
-    background-color: white;
+    background-color: rgb(205, 205, 205);
     padding: 20px;
     margin: 20px 0;
     border-radius: 10px;
