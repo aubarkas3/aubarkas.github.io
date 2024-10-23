@@ -42,8 +42,18 @@
     </div>-->
     <h1>★ Featured Events... ★</h1>
 
+    <!--Filter Buttons-->
+    <div class="filter-buttons">
+        <button onclick="filterEvents('all')">All Events</button>
+        <button onclick="filterEvents('concerts')">Concerts</button>
+        <button onclick="filterEvents('bruins')">Bruins Games</button>
+        <button onclick="filterEvents('celtics')">Celtics Games</button>
+        <button onclick="filterEvents('patriots')">Patriots Games</button>
+    </div>
+    
+
     <!--Bruins vs Stars-->
-    <section class="event">
+    <section class="event" data-category="bruins">
         <div class="info">
             <h2>Bruins vs Stars</h2>
             <p class="location">TD Garden, Boston MA</p>
@@ -97,7 +107,7 @@
     </section>
 
     <!-- Lee Brice Info-->
-    <section class="event">
+    <section class="event" data-category="concerts">
         <div class="info">
             <h2>Lee Brice</h2>
             <p class="location">MGM Music Hall, Boston MA</p>
@@ -153,7 +163,7 @@
     </section>
 
     <!--Bruins vs Leafs-->
-    <section class="event">
+    <section class="event" data-category="bruins">
         <div class="info">
             <h2>Bruins vs Maple Leafs</h2>
             <p class="location">TD Garden, Boston MA</p>
@@ -207,7 +217,7 @@
     </section>
 
     <!--Patriots Game vs Jets-->
-    <section class="event">
+    <section class="event" data-category="patriots">
         <div class="info">
             <h2>Patriots vs Jets</h2>
             <p class="location">Gillette Stadium, Foxborough MA</p>
@@ -261,7 +271,7 @@
     </section>
 
     <!--Celtics vs Bucks-->
-    <section class="event">
+    <section class="event" data-category="celtics">
         <div class="info">
             <h2>Celtics vs Bucks</h2>
             <p class="location">TD Garden, Boston MA</p>
@@ -315,7 +325,7 @@
     </section>
 
     <!--Bruins vs Flyers-->
-    <section class="event">
+    <section class="event" data-category="bruins">
         <div class="info">
             <h2>Bruins vs Flyers</h2>
             <p class="location">TD Garden, Boston MA</p>
@@ -369,7 +379,7 @@
     </section>
 
     <!--50 Cent-->
-    <section class="event">
+    <section class="event" data-category="concerts">
         <div class="info">
             <h2>50 Cent</h2>
             <p class="location">The Grand, Boston MA</p>
@@ -423,7 +433,7 @@
     </section>
 
     <!--Bruins vs Kraken-->
-    <section class="event">
+    <section class="event" data-category="bruins">
         <div class="info">
             <h2>Bruins vs Kraken</h2>
             <p class="location">TD Garden, Boston MA</p>
@@ -477,7 +487,7 @@
     </section>
 
     <!--Celtics vs Warriors-->
-    <section class="event">
+    <section class="event" data-category="celtics">
         <div class="info">
             <h2>Celtics vs Warriors</h2>
             <p class="location">TD Garden, Boston MA</p>
@@ -531,7 +541,7 @@
     </section>
 
     <!--Bruins vs Flames-->
-    <section class="event">
+    <section class="event" data-category="bruins">
         <div class="info">
             <h2>Bruins vs Flames</h2>
             <p class="location">TD Garden, Boston MA</p>
@@ -585,7 +595,7 @@
     </section>
 
     <!--Celtics vs Nets-->
-    <section class="event">
+    <section class="event" data-category="celtics">
         <div class="info">
             <h2>Celtics vs Nets</h2>
             <p class="location">TD Garden, Boston MA</p>
@@ -639,7 +649,7 @@
     </section>
 
     <!--Bruins vs Senators-->
-    <section class="event">
+    <section class="event" data-category="bruins">
         <div class="info">
             <h2>Bruins vs Senators</h2>
             <p class="location">TD Garden, Boston MA</p>
@@ -693,7 +703,7 @@
     </section>
 
     <!--Celtics vs Hawks-->
-    <section class="event">
+    <section class="event" data-category="celtics">
         <div class="info">
             <h2>Celtics vs Hawks</h2>
             <p class="location">TD Garden, Boston MA</p>
@@ -747,7 +757,7 @@
     </section>
 
     <!--Bruins vs Blues-->
-    <section class="event">
+    <section class="event" data-category="bruins">
         <div class="info">
             <h2>Bruins vs Blues</h2>
             <p class="location">TD Garden, Boston MA</p>
@@ -801,7 +811,7 @@
     </section>
 
     <!--Celtics vs Raptors-->
-    <section class="event">
+    <section class="event" data-category="celtics">
         <div class="info">
             <h2>Celtics vs Raptors</h2>
             <p class="location">TD Garden, Boston MA</p>
@@ -855,7 +865,7 @@
     </section>
 
     <!--Bruins vs Blue Jackets-->
-    <section class="event">
+    <section class="event" data-category="bruins">
         <div class="info">
             <h2>Bruins vs Blue Jackets</h2>
             <p class="location">TD Garden, Boston MA</p>
@@ -909,7 +919,7 @@
     </section>
 
     <!--Celtics vs Cavaliers-->
-    <section class="event">
+    <section class="event" data-category="celtics">
         <div class="info">
             <h2>Celtics vs Cavaliers</h2>
             <p class="location">TD Garden, Boston MA</p>
@@ -963,7 +973,7 @@
     </section>
 
     <!--Bruins vs Utah-->
-    <section class="event">
+    <section class="event" data-category="bruins">
         <div class="info">
             <h2>Bruins vs Utah</h2>
             <p class="location">TD Garden, Boston MA</p>
@@ -1017,7 +1027,7 @@
     </section>
 
     <!--Celtics vs Timberwolves-->
-    <section class="event">
+    <section class="event" data-category="celtics">
         <div class="info">
             <h2>Celtics vs Timberwolves</h2>
             <p class="location">TD Garden, Boston MA</p>
@@ -1071,7 +1081,7 @@
     </section>
 
     <!--Celtics vs Clippers-->
-    <section class="event">
+    <section class="event" data-category="celtics">
         <div class="info">
             <h2>Celtics vs Clippers</h2>
             <p class="location">TD Garden, Boston MA</p>
@@ -1125,7 +1135,7 @@
     </section>
 
     <!--Bruins vs Canucks-->
-    <section class="event">
+    <section class="event" data-category="bruins">
         <div class="info">
             <h2>Bruins vs Canucks</h2>
             <p class="location">TD Garden, Boston MA</p>
@@ -1179,7 +1189,7 @@
     </section>
 
     <!--Bruins vs Penguins-->
-    <section class="event">
+    <section class="event" data-category="bruins">
         <div class="info">
             <h2>Bruins vs Penguins</h2>
             <p class="location">TD Garden, Boston MA</p>
@@ -1233,7 +1243,7 @@
     </section>
 
     <!-- Mariah Carey Info-->
-    <section class="event">
+    <section class="event" data-category="concerts">
         <div class="info">
             <h2>Mariah Carey</h2>
             <p class="location">TD Garden, Boston MA</p>
@@ -1289,7 +1299,7 @@
     </section>
 
     <!-- Jingle Ball Info-->
-    <section class="event">
+    <section class="event" data-category="concerts">
         <div class="info">
             <h2>Kiss 108 Jingle Ball</h2>
             <h2>(With Tate Mcrae, 21 Pilots, Meghan Trainor and more)</h2>
