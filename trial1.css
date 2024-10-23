@@ -54,6 +54,18 @@ h1 {
     margin: 20px 0;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
+
+.filter-buttons {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.filter-buttons button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
 .feedback {
     font-size: 1.2em; /* Slightly larger than the default */
     font-weight: bold; /* Make text bold */
