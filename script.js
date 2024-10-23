@@ -31,3 +31,30 @@ function toggleRows(tableId) {
     // Update the text of the View More link
     viewMore.textContent = showingMore ? 'View Less..' : 'View More..';
 }
+
+//Filter Buttons
+function filterEvents(category) {
+    // Select all events
+    const events = document.querySelectorAll('.event');
+
+    if (category === 'all') {
+        // Show all events
+        events.forEach(event => {
+            event.style.display = 'flex'; // Use 'flex' instead of 'block'
+        });
+    } else {
+        // Hide all events
+        events.forEach(event => {
+            event.style.display = 'none';
+        });
+        // Show only the events that match the category
+        document.querySelectorAll(`.event[data-category="${category}"]`).forEach(event => {
+            event.style.display = 'flex'; // Use 'flex' to maintain the flexbox layout
+        });
+    }
+}
+window.onload = function() {
+    filterEvents('all'); // Or any other default category you want to show initially
+};
+
+
