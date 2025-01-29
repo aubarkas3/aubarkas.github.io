@@ -21,6 +21,14 @@ header {
     top: 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
+.announcement {
+    background-color: white; /* White background for the announcement box */
+    padding: 20px; /* Padding around the text */
+    border-radius: 8px; /* Rounded corners for the box */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow for some depth */
+    width: 80%; /* Takes 80% of the width but you can adjust as needed */
+    text-align: center; /* Center-aligns the text */
+}
 #logo-image {
     width: 200px;  /* Set a fixed width, adjust as needed */
     height: auto;  /* Maintain aspect ratio */
