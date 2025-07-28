@@ -315,17 +315,17 @@ window.ticketPrices = {
 
 window.sampleUsers = {
   going: [
-    { username: "emily99", profilePic: "https://via.placeholder.com/40x40/ff6b9d/white?text=ER" },
-    { username: "musiclover22", profilePic: "https://via.placeholder.com/40x40/4ecdc4/white?text=AC" },
-    { username: "concertfan", profilePic: "https://via.placeholder.com/40x40/a8e6cf/333?text=JS" },
-    { username: "rockstar123", profilePic: "https://via.placeholder.com/40x40/ffd93d/333?text=RS" },
-    { username: "popfan456", profilePic: "https://via.placeholder.com/40x40/ff9ff3/white?text=PF" },
-    { username: "countrymusic", profilePic: "https://via.placeholder.com/40x40/74b9ff/white?text=CM" },
+    { username: "emily99", profilePic: "placeholder_propics/E.jpeg" },
+    { username: "musiclover22", profilePic: "placeholder_propics/A.png" },
+    { username: "concertfan", profilePic: "placeholder_propics/J.png" },
+    { username: "rockstar123", profilePic: "placeholder_propics/R.png" },
+    { username: "popfan456", profilePic: "placeholder_propics/J.png" },
+    { username: "countrymusic", profilePic: "placeholder_propics/R.png" },
   ],
   downToGo: [
-    { username: "livemusic99", profilePic: "https://via.placeholder.com/40x40/fd79a8/white?text=LM" },
-    { username: "concertgoer", profilePic: "https://via.placeholder.com/40x40/00b894/white?text=CG" },
-    { username: "musiclover", profilePic: "https://via.placeholder.com/40x40/e17055/white?text=ML" },
-    { username: "showtime", profilePic: "https://via.placeholder.com/40x40/a29bfe/white?text=ST" },
+    { username: "livemusic99", profilePic: "placeholder_propics/R.png" },
+    { username: "concertgoer", profilePic: "placeholder_propics/J.png" },
+    { username: "musiclover", profilePic: "placeholder_propics/A.png" },
+    { username: "showtime", profilePic: "placeholder_propics/J.png" },
   ],
 }
