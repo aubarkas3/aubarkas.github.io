@@ -3,7 +3,7 @@ window.posts = [
   {
     id: "1",
     username: "emily99",
-    profilePic: "https://via.placeholder.com/40x40/ff6b9d/white?text=ER",
+    profilePic: "placeholder_propics/E.jpeg",
     event: "Linkin Park",
     eventId: "101",
     goingCount: 5,
@@ -15,7 +15,7 @@ window.posts = [
   {
     id: "2",
     username: "musiclover22",
-    profilePic: "https://via.placeholder.com/40x40/4ecdc4/white?text=AC",
+    profilePic: "placeholder_propics/A.png",
     event: "Morgan Wallen",
     eventId: "105",
     goingCount: 12,
@@ -27,7 +27,7 @@ window.posts = [
   {
     id: "3",
     username: "concertfan",
-    profilePic: "https://via.placeholder.com/40x40/a8e6cf/333?text=JS",
+    profilePic: "placeholder_propics/J.png",
     event: "Dua Lipa",
     eventId: "110",
     goingCount: 7,
@@ -39,7 +39,7 @@ window.posts = [
   {
     id: "4",
     username: "emily99",
-    profilePic: "https://via.placeholder.com/40x40/ff6b9d/white?text=ER",
+    profilePic: "placeholder_propics/E.jpeg",
     event: "Tate McRae",
     eventId: "107",
     goingCount: 9,
@@ -51,7 +51,7 @@ window.posts = [
   {
     id: "5",
     username: "musiclover22",
-    profilePic: "https://via.placeholder.com/40x40/4ecdc4/white?text=AC",
+    profilePic: "placeholder_propics/A.png",
     event: "Benson Boone",
     eventId: "109",
     goingCount: 4,
@@ -67,7 +67,7 @@ window.userProfiles = {
     username: "emily99",
     displayName: "Emily Rodriguez",
     bio: "Pop music enthusiast | Always down for a good show 🎵",
-    profilePic: "https://via.placeholder.com/100x100/ff6b9d/white?text=ER",
+    profilePic: "placeholder_propics/E.jpeg",
     location: "Boston, MA",
     joinedDate: "March 2023",
     eventsGoing: [
@@ -100,7 +100,7 @@ window.userProfiles = {
     username: "musiclover22",
     displayName: "Alex Chen",
     bio: "Country & pop concerts are my thing | TD Garden regular",
-    profilePic: "https://via.placeholder.com/100x100/4ecdc4/white?text=AC",
+    profilePic: "placeholder_propics/A.png",
     location: "Cambridge, MA",
     joinedDate: "January 2023",
     eventsGoing: [
@@ -126,7 +126,7 @@ window.userProfiles = {
     username: "concertfan",
     displayName: "Jordan Smith",
     bio: "Live music addict | Been to 50+ shows this year 🎤",
-    profilePic: "https://via.placeholder.com/100x100/a8e6cf/333?text=JS",
+    profilePic: "placeholder_propics/J.png",
     location: "Somerville, MA",
     joinedDate: "June 2022",
     eventsGoing: [],
