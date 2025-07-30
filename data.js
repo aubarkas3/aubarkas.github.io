@@ -4,7 +4,7 @@ window.posts = [
     id: "1",
     username: "emily99",
     profilePic: "placeholder_propics/girl1.jpg",
-    event: "Linkin Park",
+    event: "Megan Moroney",
     eventId: "101",
     goingCount: 5,
     downToGoCount: 15,
@@ -82,9 +82,9 @@ window.userProfiles = {
     eventsDownToGo: [
       {
         id: "101",
-        name: "Linkin Park",
+        name: "Megan Moroney",
         date: "August 1, 2025",
-        venue: "TD Garden",
+        venue: "Road Runner",
         image: "https://via.placeholder.com/300x200/f093fb/white?text=Linkin+Park",
       },
       {
