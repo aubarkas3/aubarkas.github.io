@@ -3,62 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nosebleeds Club — Last‑Minute Ticket Alerts</title>
+  <title>Nosebleed Seats - Event Ticket Comparison</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="logo.ico" />
+  <style>
+      body { font-family: 'Inter', sans-serif; }
+      .mobile-container { max-width: 480px; margin: 0 auto; padding: 0 1rem; }
+      .event-spacing > * + * { margin-top: 1rem; }
+      .hidden { display: none !important; }
+      .modal-overlay { 
+          position: fixed; 
+          top: 0; 
+          left: 0; 
+          right: 0; 
+          bottom: 0; 
+          background: rgba(0, 0, 0, 0.5); 
+          z-index: 50; 
+          display: flex; 
+          align-items: center; 
+          justify-content: center; 
+      }
+      .modal-content { 
+          background: white; 
+          border-radius: 0.5rem; 
+          max-width: 90vw; 
+          max-height: 90vh; 
+          overflow-y: auto; 
+      }
+      .seating-chart { 
+          position: relative; 
+          aspect-ratio: 1; 
+          background: #f3f4f6; 
+          border-radius: 0.5rem; 
+          padding: 1rem; 
+      }
+      .seat-button { 
+          position: absolute; 
+          transform: translate(-50%, -50%); 
+          font-size: 0.75rem; 
+          background: transparent; 
+          border: 1px solid #d1d5db; 
+          border-radius: 0.25rem; 
+          padding: 0.25rem 0.5rem; 
+          cursor: pointer; 
+      }
+      .seat-button:hover { background: #f9fafb; }
+  </style>
 </head>
 <body class="bg-white text-gray-900">
-  <div class="flex flex-col md:flex-row items-center max-w-5xl mx-auto px-6 py-16 gap-10">
-    <!-- Text Section -->
-    <div class="flex-1">
-      <h1 class="text-4xl font-bold mb-6">How locals get last‑minute ticket deals.</h1>
-      <ul class="space-y-2 mb-6 text-lg">
-        <li>🎟 We track ticket prices</li>
-        <li>📉 We find the best drops</li>
-        <li>📲 We text you instantly</li>
-      </ul>
-      <a href="#signup" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg">Join for Free →</a>
-    </div>
-    <!-- Image Section -->
-    <div class="flex-1">
-      <img src="concert.jpg" alt="Concert crowd" class="rounded-xl shadow-lg">
-    </div>
+  <!-- Main App Container -->
+  <div id="app" class="flex flex-col min-h-screen">
+      <main id="main-content" class="flex-1 pb-16">
+          <!-- Content will be dynamically loaded here -->
+      </main>
+      
+      <!-- Bottom Navigation -->
+      <div class="fixed bottom-0 left-0 right-0 z-50 flex h-16 bg-white border-t">
+          <button onclick="showPage('social-feed')" class="nav-item flex flex-1 flex-col items-center justify-center gap-1 text-blue-600" data-page="social-feed">
+              <i data-lucide="home" class="h-5 w-5"></i>
+              <span class="text-xs">Social Feed</span>
+          </button>
+          <button onclick="showPage('search')" class="nav-item flex flex-1 flex-col items-center justify-center gap-1 text-gray-600" data-page="search">
+              <i data-lucide="search" class="h-5 w-5"></i>
+              <span class="text-xs">Event Search</span>
+          </button>
+          <button onclick="showPage('profile')" class="nav-item flex flex-1 flex-col items-center justify-center gap-1 text-gray-600" data-page="profile">
+              <i data-lucide="user" class="h-5 w-5"></i>
+              <span class="text-xs">My Profile</span>
+          </button>
+      </div>
   </div>
 
-  <!-- Signup Form -->
-  <div id="signup" class="bg-gray-50 py-12">
-    <div class="max-w-lg mx-auto p-6 bg-white rounded-xl shadow">
-      <h2 class="text-2xl font-bold mb-4">Get Alerts</h2>
-      <form id="signupForm" class="space-y-4" onsubmit="return handleSubmit(event)">
-        <input type="tel" id="phone" placeholder="Your mobile number" required class="w-full border rounded-lg px-4 py-3">
-        <select id="city" required class="w-full border rounded-lg px-4 py-3">
-          <option value="">Select city</option>
-          <option>Boston</option>
-          <option>New York City</option>
-        </select>
-        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg">Sign Up</button>
-      </form>
-    </div>
-  </div>
+  <!-- Modal Container -->
+  <div id="modal-container"></div>
+  
+  <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js"></script>
 
-  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
-  <script>
+    <script>
     const firebaseConfig = {
-      apiKey: "AIzaSyBz6eqGQp4bphKxwJKP7_KlSt9sf-5v4F4",
-      authDomain: "nosebleeds-app.firebaseapp.com",
-      projectId: "nosebleeds-app",
+        apiKey: "AIzaSyBz6eqGQp4bphKxwJKP7_KlSt9sf-5v4F4",
+        authDomain: "nosebleeds-app.firebaseapp.com",
+        projectId: "nosebleeds-app",
+        storageBucket: "nosebleeds-app.appspot.com",
+        messagingSenderId: "1063797826615",
+        appId: "1:1063797826615:web:38730eb5a017ac9c668bb2",
+        measurementId: "G-4WX9RQN3LL"
     };
-    firebase.initializeApp(firebaseConfig);
-    const db = firebase.firestore();
 
-    async function handleSubmit(e) {
-      e.preventDefault();
-      const phone = document.getElementById('phone').value.trim();
-      const city = document.getElementById('city').value;
-      await db.collection('sms_waitlist').add({ phone, city, createdAt: new Date().toISOString() });
-      alert('You’re signed up!');
-      e.target.reset();
-    }
-  </script>
+    const app = firebase.initializeApp(firebaseConfig);
+    const analytics = firebase.analytics();
+    </script>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
